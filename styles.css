@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  color: white;
+}
+.page-container {
+  display: flex;
+  height: 100vh; 
+  width: 100vw;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  flex: 6;
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 10px;
+  background: #55503F;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #82723d;
+}
+
+header {
+  background-color: #55503F;
+  grid-column: span 2;
+  grid-row: 1; 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+header p, 
+h1 {
+  margin: 0 10px;
+}
+
+h1 {
+  font-weight: 800;
+  padding-top: 3em;
+  padding-bottom: 2.7em;
+}
+
+p {
+  padding-bottom: 2.7em;
+  line-height: 1.1em;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+
+.profile { 
+  background-color: #7E8287;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.experience {
+  background-color: #171614;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.education {
+  background-color: #979596;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.blog {
+  background-color: #55503F;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.social {
+  background-color: #7E8287;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.contact {
+  background-color: #171614;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.portfolio {
+  background-color: #979596;
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: .4em;
+}
+
+.carousel {
+  flex: 4;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Conrad_Anker_-_2016.jpg/1200px-Conrad_Anker_-_2016.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  grid-column: 4;
+  grid-row: 1 / 5;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 0;
+  margin-top: 47vh;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 0;
+  margin-top: 47vh;
+}
+
+.circle {
+  margin-left: 3px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #c4c2c4;
+  background: #c4c2c4;
+  padding: 0px 0px 6px 6px;
+  border: solid #c4c2c4 2px;
+}
+
+.light {
+  background: #fff;
+  border: solid #fff 2px;
+}
+
+.img-scroll:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 900px) {
+  
+.page-container {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.carousel {
+    order: -1;
+    height: 300px;
+}
+
+.arrow {
+    display: none;
+}
+}
+
+@media screen and (max-width: 899px) {
+
+header {
+   padding: 0;
+   margin: 0;
+}
+
+.section {
+    float: none;
+    height: 100vh;
+    width: 100%;
+}
+  
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    flex: 6;
+}
+
+header, 
+p, 
+h1 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+p {
+  padding-bottom: 1.3em;
+  line-height: 1.1em;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+
+header {
+   padding: 0;
+   margin: 0;
+}
+
+.section {
+    float: none;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    flex: 6;
+}
+
+header, p, 
+h1 {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 800;
+  padding-top: .5em;
+  padding-bottom: 0;
+}
+
+p {
+  padding-bottom: .7em;
+  line-height: .99em;
+}
+}
+
+@media screen and (max-width: 415px) {
+
+header {
+     padding: 0;
+     margin: 0;
+}
+  
+.section {
+      float: none;
+      height: 100vh;
+      width: 100%;
+}
+  
+.wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+      flex: 6;
+}
+  
+header, p, 
+h1 {
+    margin: 0;
+}
+  
+h1 {
+    font-weight: 800;
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+  
+p {
+    padding-bottom: .7em;
+    line-height: .99em;
+}
+}
+
+@media screen and (max-width: 375px) {
+
+.wrap {
+    display: inline;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.top-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
