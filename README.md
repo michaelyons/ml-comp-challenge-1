@@ -20,5 +20,4 @@ You may NOT take liberties with the layout, but your creative license includes:
 
 The theme of my project is Conrad Anker. I used the grid technique for the overarching structure and then flexbox to structure content within each individual grid section. I chose a color palette using coolers.co. The icons were found via the Fontt Awesome website.
 
-
-
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
