@@ -20,5 +20,5 @@ You may NOT take liberties with the layout, but your creative license includes:
 
 The theme of my project is Conrad Anker. I used the grid technique for the overarching structure and then flexbox to structure content within each individual grid section. I chose a color palette using coolers.co. The icons were found via the Fontt Awesome website.
 
-
+![alt text](https://github.com/michaelyons/ml-comp-challenge-1/blob/master/Screen%20Shot%202018-05-22%20at%206.41.59%20AM.png)
 ![alt text](https://github.com/michaelyons/ml-comp-challenge-1/blob/master/Screen%20Shot%202018-05-22%20at%207.15.38%20AM.png)
